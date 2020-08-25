@@ -118,10 +118,6 @@ const formatandoMensagem = (quebraMensagens) => {
 
 mensagens(quebraMensagens);
 
-fs.writeFileSync("resultado.txt", resultado, (err) => {
-    if(err){
-        console.log(err);
-    }
-})
+fs.writeFileSync("resultado.txt", resultado);
 
 
